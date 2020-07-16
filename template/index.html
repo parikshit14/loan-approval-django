@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>loan approval usecase</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/animate.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" >
+
+     <!-- MAIN CSS -->
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <div class="container">
+     <!-- MENU -->
+     <header>
+     <section class="navbar navbar-default navbar-static-top" role="navigation" style="align-items: center;">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>loan approval</a>
+               </div>
+
+               
+
+          </div>
+     </section>
+</header>
+</div>
+  
+  <h2> check whether you get loan instantly!! </h2>
+  <h3> Please enter the details: </h3>
+  <br>
+  <form method="post" enctype="multipart/form-data" action="loan_approval">
+{% csrf_token %}
+<div class="col-md-4 col-sm-4"><label for="fname">loan type:</label> </div> <input name="loan_typeVal" type="text" value={{temp.loan_type}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">property type:</label> </div> <input type="text" id="lname" name="property_typeVal" value={{temp.property_type}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">loan purpose:</label> </div> <input type="text" id="lname" name="loan_purposeVal" value={{temp.loan_purpose}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">occupancy:</label> </div> <input type="text" id="lname" name="occupancyVal" value={{temp.occupancy}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">loan amount($):</label> </div> <input type="text" id="lname" name="loan_amountVal" value={{temp.loan_amount}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">preapproval:</label> </div> <input type="text" id="lname" name="preapprovalVal" value={{temp.preapproval}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">msa md:</label> </div> <input type="text" id="lname" name="msa_mdVal" value={{temp.msa_md}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">state code:</label> </div> <input type="text" id="lname" name="state_codeVal" value={{temp.state_code}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">county code:</label> </div> <input type="text" id="lname" name="county_codeVal" value={{temp.county_code}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">applicant ethnicity:</label> </div> <input type="text" id="lname" name="applicant_ethnicityVal" value={{temp.applicant_ethnicity}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">applicant race:</label> </div> <input type="text" id="lname" name="applicant_raceVal" value={{temp.applicant_race}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">applicant sex:</label> </div> <input type="text" id="lname" name="applicant_sexVal" value={{temp.applicant_sex}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">applicant income($):</label> </div> <input type="text" id="lname" name="applicant_incomeVal" value={{temp.applicant_income}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">population:</label> </div> <input type="text" id="lname" name="populationVal" value={{temp.population}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">minority population pct:</label> </div> <input type="text" id="lname" name="minority_population_pctVal" value={{temp.minority_population_pct}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">ffiecmedian family income($):</label> </div> <input type="text" id="lname" name="ffiecmedian_family_incomeVal" value={{temp.ffiecmedian_family_income}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">tract to msa md income pct:</label> </div> <input type="text" id="lname" name="tract_to_msa_md_income_pctVal" value={{temp.tract_to_msa_md_income_pct}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">number of owner occupied units:</label> </div> <input type="text" id="lname" name="number_of_owner_occupied_unitsVal" value={{temp.number_of_owner_occupied_units}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">number of 1 to 4 family units:</label> </div> <input type="text" id="lname" name="number_of_1_to_4_family_unitsVal" value={{temp.number_of_1_to_4_family_units}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">lender:</label> </div> <input type="text" id="lname" name="lenderVal" value={{temp.lender}}><br><br>
+<div class="col-md-4 col-sm-4"><label for="lname">co applicant:</label> </div> <input type="text" id="lname" name="co_applicantVal" value={{temp.co_applicant}}><br><br>
+<br>
+<input type="submit" value="Submit" ></div>
+</form>
+<br>
+
+    {% if scoreval == 1 %}
+	<h2>Loan approved</h2>
+	{% elif scoreval == 0 %}
+	<h2>Loan Not approved</h2>
+	{% endif %}
+<div class="container">
+     {% block content%}
+     {% endblock %}
+    
+</div>
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p> Copyright </p>
+                              </div>
+                         </div>
+                         
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script  src="{% static 'js/jquery.js' %}"></script>
+     <script  src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script  src="{% static 'js/jquery.sticky.js' %}"></script>
+     <script  src="{% static 'js/jquery.stellar.min.js' %}"></script>
+     <script  src="{% static 'js/wow.min.js' %}"></script>
+     <script  src="{% static 'js/smoothscroll.js' %}"></script>
+     <script  src="{% static 'js/owl.carousel.min.js' %}"></script>
+     <script  src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
