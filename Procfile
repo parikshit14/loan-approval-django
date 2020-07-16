@@ -1,1 +1,1 @@
-web:gunicorn lawebapp.wsgi
+web: gunicorn lawebapp:app
