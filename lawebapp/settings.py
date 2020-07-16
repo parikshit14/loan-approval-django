@@ -119,5 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = 'lawebapp/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'firstpage/static/')
+STATIC_ROOT = os.path.join(BASE_DIR,'lawebapp/static/')
 #STATICFILES_DIR=(os.path.join(BASE_DIR,'firstpage/static'))
