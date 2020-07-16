@@ -7,3 +7,4 @@ ujson==1.35
 urllib3==1.25.9
 scikit-learn==0.23.1
 joblib==0.16.0
+gunicorn==19.0.0
