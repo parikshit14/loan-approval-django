@@ -4,7 +4,7 @@ from django.http import HttpResponse
 import joblib
 import pandas as pd
 # Create your views here.
-reloadmodel=joblib.load('C:/Users/Parikshit/lawebapp/models/loan_approvals.pkl')
+reloadmodel=joblib.load('models/loan_approvals.pkl')
 def index(request):
     temp={}
     temp['loan_type']=2
