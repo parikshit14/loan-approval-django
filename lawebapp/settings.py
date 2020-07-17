@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!h4b=u(8h2z^npd7@l0zwuovery9!8o@^j+z2&t^&0vbvba80@'
+SECRET_KEY ='!h4b=u(8h2z^npd7@l0zwuovery9!8o@^j+z2&t^&0vbvba80@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://ml-loan-approval-api.herokuapp.com/','.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -119,5 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 #STATICFILES_DIR=(os.path.join(BASE_DIR,'firstpage/static'))
