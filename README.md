@@ -1,4 +1,5 @@
-#LOAN APPROVAL USECASE
+LOAN APPROVAL USECASE
+======
 
 *    This is a django web-api having machine learning as backend algorithm.
 *    Creating a new Django project
@@ -14,4 +15,5 @@
 
 #### the project is deplyed on heroku
 You can find the link here: [loan-approval](https://ml-loan-approval-api.herokuapp.com/)
+
 values are set to default, one can try mix-and-match with these values to recieve different results.
